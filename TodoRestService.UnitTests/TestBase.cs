@@ -15,7 +15,7 @@ namespace TodoRestService.UnitTests
 
             var options = new DbContextOptionsBuilder<TodoContext>()
 
-             .UseMySql("server=localhost;userid=root;password=sahmed;database=taskdb2", Microsoft.EntityFrameworkCore.ServerVersion.FromString("8.0.25-mysql"))
+             .UseMySql("server=localhost;userid=;password=;database=", Microsoft.EntityFrameworkCore.ServerVersion.FromString("8.0.25-mysql"))
              .Options;
 
             return new TodoContext(options);
